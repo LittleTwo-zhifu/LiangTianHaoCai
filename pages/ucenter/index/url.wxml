@@ -1,0 +1,5 @@
+<!--pages/ucenter/index/url.wxml-->
+ <image class="logo" src="{{shopLogo}}" />
+ <view class="text">
+ <text>持续完善中，敬请期待...</text>
+ </view>
