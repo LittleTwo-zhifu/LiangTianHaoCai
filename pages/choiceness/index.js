@@ -155,6 +155,11 @@ Page({
     var goods = app.globalData.goods
     var recommendGoods = []
     for (let i = 0; i < goods.length; i++) {
+      //新增评分设置为五星好评
+      goods[i].starscore = (goods[i].numberOrders / goods[i].numberOrders) * 5
+      goods[i].starscore = Math.ceil(goods[i].starscore / 0.5) * 0.5
+      goods[i].starpic = starscore.picStr(goods[i].starscore)
+      
       if (goods[i].recommendStatus === 1) {
         recommendGoods.push(goods[i])
       }
