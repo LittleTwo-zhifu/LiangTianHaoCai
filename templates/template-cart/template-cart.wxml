@@ -1,6 +1,9 @@
 <template name="no-goods">
-  <view class='text-highlight'>
+  <!-- <view class='text-highlight'>
     ◉12小时极速发货 　◉24小时无忧退款 　◉满40元免运费
+  </view> -->
+  <view class='text-highlight'>
+    ◉半小时极速发货 　◉1小时无忧退款 　◉免费送货上门
   </view>
 
   <view class="shop-cart-empty">

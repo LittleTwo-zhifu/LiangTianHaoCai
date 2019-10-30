@@ -43,7 +43,7 @@ Page({
     })
     that.getRecommendTitlePicStr();
     wx.setNavigationBarTitle({
-      title: '小潘推荐',
+      title: '精选推荐',
     })
     that.getBanners();
     that.getNotice();

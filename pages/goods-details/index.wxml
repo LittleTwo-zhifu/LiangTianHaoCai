@@ -23,6 +23,25 @@
       <template is="wxParse" data="{{wxParseData:article.nodes}}" />
     </view>
   </view>
+
+<view class="goods-des-info" style="margin-top:35rpx;" wx:if="{{reputation}}">
+  <view class="label-title" style="border-bottom:1px solid #f4f4f4;">大家评价
+    <text style="color:red">({{reputation.length}})</text>
+  </view>
+  <view class="goods-text" style="margin-top:15rpx;" wx:for="{{reputation}}" wx:key="id">
+    <view style="width:100rpx;float:left;">
+      <image style="width: 100rpx; height: 100rpx;" src="{{item.user.avatarUrl}}"></image>
+    </view>
+    <view style="width:500rpx;float:left;margin-left:35rpx;border-bottom:1px solid #f4f4f4;">
+      <view>{{item.goods.goodReputationRemark}}</view>
+      <view style="color: #B0B0B0;font-size:24rpx;">{{item.goods.dateReputation}} {{item.goods.property}}</view>
+    </view>
+    <wxc-label class='goods-text-label' type='corner' text="{{item.goods.goodReputationStr}}"></wxc-label>
+  </view>
+</view>
+
+
+
   <view class="footer-box">
     <view class="shop-cart-btn" bindtap="goShopCar">
       <view class="shop-num">({{shopNum}})</view>

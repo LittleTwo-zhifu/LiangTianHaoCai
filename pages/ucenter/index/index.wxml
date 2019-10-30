@@ -24,11 +24,11 @@
       </view>
     </view>
     <view class='userInfoMask'></view>
-    <wxc-button class='my-sign' wx:if="{{score_sign_continuous == 0}}" size="small" type="beauty" value="每日签到" bindclick="scoresign"></wxc-button>
-    <wxc-button class='my-sign' wx:if="{{score_sign_continuous > 0}}" size="small" type="secondary" value="已连续签到 {{score_sign_continuous}} 天" bindclick="scoresign"></wxc-button>
+    <!-- <wxc-button class='my-sign' wx:if="{{score_sign_continuous == 0}}" size="small" type="beauty" value="每日签到" bindclick="scoresign"></wxc-button>
+    <wxc-button class='my-sign' wx:if="{{score_sign_continuous > 0}}" size="small" type="secondary" value="已连续签到 {{score_sign_continuous}} 天" bindclick="scoresign"></wxc-button> -->
   </view>
 <view class='h-contents'>
-    <view class='a-item'>
+    <!-- <view class='a-item'>
       <wxc-icon type='purse' size='{{iconSize-10}}' color='#69C3AA' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
       <view class='my'>
         积分:
@@ -53,7 +53,7 @@
       <wxc-button type="info" size="small" value="充值" bindclick="recharge"></wxc-button>
       <view style='height:8rpx;'> </view>
       <wxc-button type="beauty" size="small" value="提现" bindclick="withdraw"></wxc-button>
-    </view>
+    </view> -->
   </view>
     <view class="item-b">
       <navigator url="/pages/ucenter/order-list/index" hover-class="none" class="b">

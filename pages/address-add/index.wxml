@@ -31,11 +31,17 @@
               </view>
             </picker>
         </view>
+        <view class="row-wrap">
+          <view class="label">收货学校</view>
+          <view  class="label-right">
+            <input value="西华师范大学新区" disabled="true"/>
+          </view>
+        </view>
         <view class="addr-details">
             <view class="label">详细地址</view>
             <view class="label-right">
                 <!--<input class="input" type="text" placeholder="街道门牌信息"/>-->
-                <textarea name="address" auto-height placeholder="街道门牌信息"  value="{{addressData.address}}{{wxaddress.detailInfo}}"/>
+                <textarea name="address" auto-height placeholder="校内位置信息"  value="{{addressData.address}}{{wxaddress.detailInfo}}"/>
             </view>
         </view>
         <view class="row-wrap">
@@ -43,7 +49,7 @@
             <view class="label-right">
                 <!-- <input wx:if="{{addressData.code}}" name="code" value="610000" class="input" type="number" value="{{addressData.code}}{{wxaddress.postalCode}}"/>
                 <input wx:else name="code" class="input" type="number" value="{{wxaddress.postalCode}}"/> -->
-                <input name="code" class="input" type="number" value="610000"/>
+                <input name="code" class="input" type="number" value="637000"/>
             </view>
         </view>
     </view>

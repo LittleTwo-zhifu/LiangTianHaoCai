@@ -132,12 +132,12 @@ Page({
           wx.removeStorageSync('shopCarInfo');
         }
 
-        var price;//运费
-        if (res.data.data.amountTotle > res.data.data.free_shipping_for_purchases){
+        var price;//运费调整
+        //if (res.data.data.amountTotle > res.data.data.free_shipping_for_purchases){
           price = 0;
-        } else {
-          price = 5;
-        }
+        // } else {
+        //   price = 5;
+        // }
         if (!e) {
           that.setData({
             isNeedLogistics: res.data.data.isNeedLogistics,
